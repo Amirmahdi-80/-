@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    <title>Document</title>
+</head>
+<body class="row justify-content-center align-items-center w-100">
+    <!-- Main -->
+
+    <!-- Device 1 -->
+    <div class="d-flex flex-column justify-content-center align-items-center D1" id="D1">
+        <h5>دستگاه محاسبه گر حقوق دریافتی</h5>
+        <label for="income" id="No5" class="m-0">حقوق خود را وارد کنید</label>
+        <input type="number" id="No4" class="text-center">
+        <button disabled class="btn btn-light" id="Bime">بیمه اینجا نمایش داده میشود</button>
+        <button disabled class="btn btn-light" id="Maliyat">مالیات اینجا نمایش داده میشود</button>
+        <button disabled class="btn btn-light" id="Daryafti">خالص دریافتی اینجا نمایش داده میشود</button>
+        <button class="btn btn-success" onclick="fun2()">تایید</button>
+    </div>
+    <!-- Device 2 -->
+    <div class="d-flex flex-column justify-content-center align-items-center D2" id="D2">
+        <h5>دستگاه تبدیل سن به ثانیه</h5>
+        <label for="Age" id="No1" class="m-0">سن خود را وارد کنید</label>
+        <input type="number" id="No2" class="text-center">
+        <button disabled class="btn btn-light" id="No3">نتیجه اینجا نمایش داده میشود</button>
+        <button class="btn btn-success" onclick="fun1()">تایید</button>
+    </div>
+    <!-- Device 3 -->
+    <div class="d-flex flex-column justify-content-center align-items-center D2" id="D3">
+        <h5>دستگاه محاسبه گر تورم</h5>
+        <label for="Year" id="N1" class="m-0">قیمت سال گذشته را وارد کنید</label>
+        <input type="number" id="Year1" class="text-center">
+        <label for="Age" id="N2" class="m-0">قیمت سال جاری را وارد کنید</label>
+        <input type="number" id="Year2" class="text-center">
+        <button disabled class="btn btn-light" id="Tavarom">نرخ تورم اینجا نمایش داده میشود</button>
+        <button disabled class="btn btn-light" id="NextYear">قیمت سال بعد اینجا نمایش داده میشود</button>
+        <button disabled class="btn btn-light" id="Tafavot">تفاوت قیمت اینجا نمایش داده میشود</button>
+        <button class="btn btn-success" onclick="fun3()">تایید</button>
+    </div>
+    <!-- Device 4 -->
+    <div class="d-flex flex-column justify-content-center align-items-center D2" id="D4">
+        <h5>دستگاه پیش بینی قیمت کالا</h5>
+        <label for="Kala" id="Sh1" class="m-0">قیمت کالا را وارد کنید</label>
+        <input type="number" id="Kala" class="text-center">
+        <label for="Nerkh" id="Sh2" class="m-0">نرخ تورم را وارد کنید</label>
+        <input type="number" id="Nerkh" class="text-center">
+        <button disabled class="btn btn-light" id="Sale1">سال اول اینجا نمایش داده میشود</button>
+        <button disabled class="btn btn-light" id="Sale2">سال دوم اینجا نمایش داده میشود</button>
+        <button disabled class="btn btn-light" id="Sale3">سال سوم اینجا نمایش داده میشود</button>
+        <button class="btn btn-success" onclick="fun13()">تایید</button>
+    </div>
+    <!-- Options -->
+    <div class="d-flex flex-column justify-content-center align-items-center Menu">
+        <button class="Dokme" onclick="fun4()" ondblclick="fun7()">محاسبه حقوق</button>
+        <button class="Dokme" onclick="fun5()" ondblclick="fun8()">تبدیل سن به ثانیه</button>
+        <button class="Dokme" onclick="fun6()" ondblclick="fun9()">محاسبه تورم</button>
+        <button class="Dokme" onclick="fun11()" ondblclick="fun12()">پیش بینی قیمت کالا</button>
+        <button class="Dokme" onclick="fun10()">ماشین حساب پیشرفته</button>
+    </div>
+    <!-- End of Main -->
+
+    <!-- JS -->
+    <script src="Js/JavaScript.js"></script>
+</body>
+</html>
